@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Résultats de recherche de vidéos</title>
+</head>
+<body>
+	<h1>Résultats de recherche de vidéos pour "{{ query }}"</h1>
+	{% if results %}
+		<ul>
+		{% for result in results %}
+			<li><video src="{{ result.url }}" controls></video></li>
+			<p>{{ result.description }}</p>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p>Aucun résultat trouvé pour "{{ query }}".</p>
+	{% endif %}
+</body>
+</html>

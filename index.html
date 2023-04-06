@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Recherche</title>
+</head>
+<body>
+	<h1>Recherche</h1>
+	<form method="get" action="/result">
+		<label for="q">Recherche :</label>
+		<input type="text" id="q" name="q">
+		<label for="t">Type de recherche :</label>
+		<select id="t" name="t">
+			<option value="text">Texte</option>
+			<option value="image">Image</option>
+			<option value="video">Vidéo</option>
+			<option value="torrent">Torrent</option>
+			<option value="tor">Tor</option>
+		</select>
+		<input type="submit" value="Rechercher">
+	</form>
+</body>
+</html>
